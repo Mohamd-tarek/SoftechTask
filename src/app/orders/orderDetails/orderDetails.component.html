@@ -1,0 +1,50 @@
+<h2 class="m-2">Order Details</h2>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Order Id : </span> <span> {{order.orderId}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Order Date : </span> <span> {{order.orderDate |date:'mediumDate'}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span>Payment Method : </span> <span> {{order.paymentType}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span>Total Price : </span> <span> {{totalPrice | currency}} </span> 
+</p>
+
+<h2 class="m-2">Customer Details</h2>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Name : </span> <span> {{user.name}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Email : </span> <span> {{user.email}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Phone : </span> <span> {{user.phone}} </span> 
+</p>
+<p class="border border-2 border-primary p-2 m-2">
+  <span> Address : </span> <span> {{user.address}} </span> 
+</p>
+
+<h2 class="m-2">Products</h2>
+<table  class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col"> </th>
+      <th scope="col">Name</th>
+      <th scope="col">Price </th>
+      <th scope="col">Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr  *ngFor="let product of products; index as i" >
+      <th scope="row">
+        <img [src]="product.productImg" [style.height]="'40px'" class="img-thumbnail" alt="...">
+      </th>
+      <td>{{product.productName}}</td>
+      <td>{{product.productPrice }}</td>
+      <td>{{getQuantity(i)}}</td>      
+    </tr>
+  </tbody>  
+</table>  

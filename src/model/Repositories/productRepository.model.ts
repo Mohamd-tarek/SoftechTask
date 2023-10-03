@@ -19,11 +19,4 @@ export class ProductRepository {
     return this.http.get<Product>(API_ENDPOINTS.Product + "/" + ProductId);
   }
 
-  addProduct(Product: Product): Observable<any> {
-    return this.http.post<any>(API_ENDPOINTS.AddProduct , Product);
-  }
-
-  deleteProduct(ProductId: number): Observable<any> {
-    return  this.http.delete(API_ENDPOINTS.DeleteProduct + "/" + ProductId);
-  }
 }

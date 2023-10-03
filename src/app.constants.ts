@@ -10,23 +10,21 @@ interface APIEndPoints {
 
     readonly Products: string;
     readonly Product: string;
-    readonly AddProduct: string;
-    readonly DeleteProduct: string;
     readonly Orders: string;
     readonly Order: string;
-    readonly AddOrder: string;
-    readonly DeleteOrder: string;
+    readonly Users: string;
+    readonly User: string;
+
   }
 
   export const API_ENDPOINTS : APIEndPoints =  {
     Products: `${REST_API_URL}/Products`,
     Product: `${REST_API_URL}/Product`,
-    AddProduct: `${REST_API_URL}/AddProduct`,
-    DeleteProduct: `${REST_API_URL}/DeleteProduct`,
     Orders: `${REST_API_URL}/Orders`,
     Order: `${REST_API_URL}/Order`,
-    AddOrder: `${REST_API_URL}/AddOrder`,
-    DeleteOrder: `${REST_API_URL}/DeleteOrder`
+    Users: `${REST_API_URL}/Users`,
+    User: `${REST_API_URL}/User`,
+
   }
 
   

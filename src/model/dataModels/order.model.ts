@@ -6,5 +6,6 @@ export class Order {
       public  orderDate? :string,
       public  userId? : string,
       public  products? :any[] ,
+      public  paymentType?:string,
      ) {} 
   }

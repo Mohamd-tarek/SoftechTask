@@ -6,7 +6,7 @@ import { NavBarComponent } from './navbar/navbar.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CacheInterceptor } from 'src/CacheInterceptor';
 import { DataInterceptor } from 'src/DataInterceptor';
-import { ModelModule } from 'src/model/model.module';
+import { ModelModule } from './model/model.module';
 import { ProductsModule } from './products/products.module';
 import { OrdersModule } from './orders/orders.module';
 

@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable, of } from "rxjs";
 import { StaticDataSource } from "./app/staticData/datasource";
 import { useAnimation } from "@angular/animations";
-import { Order } from "./model/dataModels/order.model";
+import { Order } from "./app/model/dataModels/order.model";
 import { orders } from "./app/staticData/orders";
 
 @Injectable()

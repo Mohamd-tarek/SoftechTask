@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { OrderRepository } from 'src/model/Repositories/orderRepository.model';
-import { ProductRepository } from 'src/model/Repositories/productRepository.model';
+import { OrderRepository } from './model/Repositories/orderRepository.model';
+import { ProductRepository } from './model/Repositories/productRepository.model';
 
 @Component({
   selector: 'app-root',

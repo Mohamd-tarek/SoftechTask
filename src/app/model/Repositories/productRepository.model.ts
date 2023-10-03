@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { API_ENDPOINTS } from "../../app.constants";
+import { API_ENDPOINTS } from "../../../app.constants";
 import { Product } from "../dataModels/product.model";
 
 @Injectable({

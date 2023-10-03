@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { OrderRepository } from 'src/model/Repositories/orderRepository.model';
-import { ProductRepository } from 'src/model/Repositories/productRepository.model';
-import { UserRepository } from 'src/model/Repositories/userRepository.model';
-import { Order } from 'src/model/dataModels/order.model';
-import { Product } from 'src/model/dataModels/product.model';
-import { User } from 'src/model/dataModels/user.model';
+import { OrderRepository } from '../../model/Repositories/orderRepository.model';
+import { ProductRepository } from '../../model/Repositories/productRepository.model';
+import { UserRepository } from '../../model/Repositories/userRepository.model';
+import { Order } from '../../model/dataModels/order.model';
+import { Product } from '../../model/dataModels/product.model';
+import { User } from '../../model/dataModels/user.model';
 
 @Component({
   selector: 'orderetails',

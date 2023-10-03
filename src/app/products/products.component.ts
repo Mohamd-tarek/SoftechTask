@@ -1,7 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { OrderRepository } from 'src/model/Repositories/orderRepository.model';
-import { ProductRepository } from 'src/model/Repositories/productRepository.model';
-import { Product } from 'src/model/dataModels/product.model';
+import { ProductRepository } from '../model/Repositories/productRepository.model';
+import { Product } from '../model/dataModels/product.model';
 import { Subscription } from 'rxjs';
 
 @Component({

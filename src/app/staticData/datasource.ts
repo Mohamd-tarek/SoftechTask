@@ -1,9 +1,9 @@
 import { products } from "./products";
 import { orders } from "./orders";
 import { users } from "./users";
-import { Product } from "src/model/dataModels/product.model";
-import { Order } from "src/model/dataModels/order.model";
-import { User } from "src/model/dataModels/user.model";
+import { Product } from "../model/dataModels/product.model";
+import { Order } from "../model/dataModels/order.model";
+import { User } from "../model/dataModels/user.model";
 
 
 export class StaticDataSource {

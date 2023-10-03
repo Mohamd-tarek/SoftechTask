@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClient, HttpParams } from "@angular/common/http";
-import { API_ENDPOINTS } from "../../app.constants";
+import { API_ENDPOINTS } from "../../../app.constants";
 import { Order } from "../dataModels/order.model";
 
 

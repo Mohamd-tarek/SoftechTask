@@ -19,7 +19,7 @@ export class StaticDataSource {
         });
         orders.forEach(order => {
 
-            let curOrder = new Order(order.OrderId, order.OrderDate, order.UserId, order.Products);
+            let curOrder = new Order(order.OrderId, order.OrderDate, order.UserId, order.Products,  order.PaymentType);
             this.orders.push(curOrder);
          });
          users.forEach(user => {

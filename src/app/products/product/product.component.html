@@ -3,7 +3,7 @@
   <img [src]="product.productImg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{product.productName}}</h5>
-    <p class="card-text">{{product.producrPrice | currency}}</p>
+    <p class="card-text">{{product.productPrice | currency}}</p>
     <a [routerLink]="['/cart', product.productId]" class="btn btn-primary">Add To Cart</a>
   </div>
 </div>

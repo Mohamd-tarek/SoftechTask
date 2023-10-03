@@ -20,13 +20,4 @@ export class OrderRepository {
   getOrder(OrderId: number): Observable<Order> {
     return this.http.get<Order>(API_ENDPOINTS.Order + "/" + OrderId);
   }
-  
-  addOrder(Order: Order): Observable<any> {
-    return this.http.post<any>(API_ENDPOINTS.AddOrder , Order);
-  }
-
-  deleteOrder(OrderId: number): Observable<any> {
-    return  this.http.delete(API_ENDPOINTS.DeleteOrder + "/" + OrderId);
-  }
-
 }

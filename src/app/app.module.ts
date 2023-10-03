@@ -8,6 +8,7 @@ import { CacheInterceptor } from 'src/CacheInterceptor';
 import { DataInterceptor } from 'src/DataInterceptor';
 import { ModelModule } from 'src/model/model.module';
 import { ProductsModule } from './products/products.module';
+import { OrdersModule } from './orders/orders.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductsModule } from './products/products.module';
     BrowserModule,
     AppRoutingModule,
     ModelModule,
-    ProductsModule
+    ProductsModule,
+    OrdersModule
   ],
   providers: [ 
     { provide: HTTP_INTERCEPTORS, useClass: CacheInterceptor, multi: true },
